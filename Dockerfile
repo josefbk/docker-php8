@@ -28,3 +28,5 @@ RUN apt-get install chromium-driver
 
 RUN pecl install redis-5.3.2 \
     && docker-php-ext-enable redis
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
