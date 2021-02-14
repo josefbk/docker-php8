@@ -1,4 +1,4 @@
-FROM php:8.0.0-fpm-buster
+FROM php:8.0.2-fpm-buster
 
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
