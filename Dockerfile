@@ -1,4 +1,4 @@
-FROM php:8.1-fpm-buster
+FROM php:8.2.3-fpm-buster
 
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN echo "error_log = /code/var/log/php-error.log;" >> "$PHP_INI_DIR/conf.d/error_log.ini"
